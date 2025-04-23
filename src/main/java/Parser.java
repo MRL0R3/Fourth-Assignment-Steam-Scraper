@@ -86,22 +86,6 @@ public class Parser {
 
     public static void main(String[] args) {
         //you can test your code here before you run the unit tests
-        Parser parser = new Parser();
-        try {
-            parser.setUp();
 
-            // Test sorting methods
-            System.out.println("Sorted by name:");
-            parser.sortByName().forEach(System.out::println);
-
-            System.out.println("\nSorted by rating:");
-            parser.sortByRating().forEach(System.out::println);
-
-            System.out.println("\nSorted by price:");
-            parser.sortByPrice().forEach(System.out::println);
-
-        } catch (IOException e) {
-            System.err.println("Error parsing HTML file: " + e.getMessage());
-        }
     }
 }
